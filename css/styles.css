@@ -40,10 +40,11 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -76,13 +77,12 @@ ul {
 
 /* Header section */
 .header {
-  border-bottom: 1px #434455;
+  border-bottom: 1px solid var(--frame-colour);
 }
 .container-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .link-style {
@@ -130,18 +130,12 @@ ul {
 }
 .contacts-info {
   display: flex;
-}
-.header-contacts-list {
-  padding: 24px 0;
+  gap: 40px;
 }
 
 .header-contacts {
   font-style: normal;
   color: var(--item-text-colour);
-  margin-right: 40px;
-}
-.contacts-info .link + .link {
-  margin-left: 40px;
 }
 
 /* /Header section */
@@ -186,6 +180,7 @@ ul {
   border-radius: 4px;
   font-weight: 500;
   line-height: 1.5;
+  cursor: pointer;
 
   align-items: center;
   padding: 16px 32px;
@@ -203,11 +198,11 @@ ul {
 /* Advantages sections */
 
 .qualities {
+  padding-top: 120px;
 }
 
 .conteiner-advantages {
   display: flex;
-  padding-top: 120px;
 }
 
 .qualities-list {
@@ -244,6 +239,7 @@ ul {
 .examples {
   margin-bottom: 0;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .examples-section {
   display: block;
@@ -273,6 +269,7 @@ ul {
 .team {
   background: var(--team-colour);
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .container-team {
   margin-left: auto;
@@ -293,7 +290,6 @@ img {
   color: var(--secondary-title-color);
   text-align: center;
 
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 .teamt-list {
@@ -365,18 +361,16 @@ img {
 
 /* ----------Portfplio.html---------- */
 .main-section {
-  background-color: var(--porfolio-background-colour);
+  padding-top: 96px;
 }
 .main-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   gap: 24px;
-}
-
-.main-content {
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .main-button-item:hover,
@@ -407,7 +401,7 @@ img {
 }
 .preview-container {
   display: flex;
-  padding-top: 72px;
+  padding-top: 0px;
   padding-bottom: 120px;
 }
 .preview-list {
@@ -417,17 +411,20 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 48px 24px;
+  gap: 48px 22px;
 }
 .preview-item {
-  flex-basis: calc((100% / 3) - 24px);
+  flex-basis: calc((100% / 3) - 15px);
 }
 .preview-text {
   border-left: var(--frame-colour);
   border-bottom: var(--frame-colour);
   border-left: var(--frame-colour);
+  border: 1px solid var(--frame-colour);
+  border-top: none;
 
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
+  
 }
 .preview-name {
   font-weight: 500;
