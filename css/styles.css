@@ -136,6 +136,9 @@ ul {
 .header-contacts {
   font-style: normal;
   color: var(--item-text-colour);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* /Header section */
@@ -228,10 +231,6 @@ ul {
 }
 .qualities-text {
   color: var(--item-text-colour);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 /* /Advantages sections */
 
@@ -305,7 +304,7 @@ img {
 }
 .team-item {
   background: var(--team-background);
-  flex-basis: calc((100% / 4) - 24px);
+  flex-basis: calc((100% / 4) - 18px);
 }
 .team-name {
   font-weight: 500;
@@ -362,6 +361,7 @@ img {
 /* ----------Portfplio.html---------- */
 .main-section {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 .main-button {
   display: flex;
@@ -395,14 +395,16 @@ img {
   font-family: inherit;
   line-height: 1.5;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .preview {
 }
 .preview-container {
   display: flex;
+  flex-direction: column;
   padding-top: 0px;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
 }
 .preview-list {
   padding: 0;
@@ -424,7 +426,6 @@ img {
   border-top: none;
 
   padding: 32px 16px;
-  
 }
 .preview-name {
   font-weight: 500;
